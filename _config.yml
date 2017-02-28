@@ -9,7 +9,7 @@
 title: P.G
 email: jihongjiang@outlook.com
 description: The Blog of JHJ
-baseurl: "https://princessgod.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://princessgod.github.io" # the base hostname & protocol for your site
 #twitter_username: hemang_kumar
 github_username:  PrincessGod
