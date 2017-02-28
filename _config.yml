@@ -10,7 +10,7 @@ title: P.G
 email: 635232592@qq.com
 description: The Blog of JHJ
 #baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://princessgod.github.io/index.html" # the base hostname & protocol for your site
+url: "http://princessgod.github.io/index.html" # the base hostname & protocol for your site
 #twitter_username: hemang_kumar
 github_username:  PrincessGod
 paginate: 5
