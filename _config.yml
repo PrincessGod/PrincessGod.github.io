@@ -7,13 +7,15 @@
 
 # Site settings
 title: P.G
-email: jihongjiang@outlook.com
+email: 635232592@qq.com
 description: The Blog of JHJ
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://princessgod.github.io/index.html" # the base hostname & protocol for your site
 #twitter_username: hemang_kumar
 github_username:  PrincessGod
 paginate: 5
+
+encoding: utf-8
 
 gems: [jekyll-paginate, kramdown]
 # Build settings
