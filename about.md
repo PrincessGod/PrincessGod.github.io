@@ -4,144 +4,67 @@ title : About
 permalink: /about/
 ---
 
-<h2>Gravity</h2>
-<p>Minimal, text based, liberal Jekyll theme<br>for sharing your awesome ideas.</p>
+<h2>P.G</h2>
+<p>Personal blog of JHJ<br>JHJ的个人博客</p>
 <br>
-<center><p ><strong><span class="manual">Get up and running with</span> Gravity</strong></p></center>
+<center><p ><strong><span class="manual">关于我的一点小事</span> </strong></p></center>
 <br>
-<div class="manual-post">
-  <div class="manual manual-title">
-  <strong>Posting</strong>
-  </div>
 <p>  <div class="manual-content">
 
-```
-  - Create a .markdown file inside <code class="highlighter-rouge">_posts</code> folder.<br>
-  - Name the file according to the format YY-MM-DD-[short name for your post].<br>  <code>2016-03-30-i-love-design.markdown</code><br>
-  - Write the <a href="jekyll">Front Matter</a> and content in the file.<br>
-  <div class="example">
-    <span class='manual'>FORMAT</span><BR>
-    <pre>---
-```
-
-layout: post | default | page
-title:  String<span class="hint"> Post Title</span>
-date:   Time Stamp
-categories: String | Array of Strings<span class="hint"> Category / Categories </span>
-\---</pre>
-
-```
-  </div>
-  <div class="example">
-
-    <pre>---
-```
-
-layout: post
-title:  "The One with the Blackout"
-date:   2016-03-30 19:45:31 +0530
-categories: ["life", "friends"]
-\---</pre>
-
-```
-  </div>
-```
-
-  </div>
-</p>
-</div>
-<br>
-<div class="manual-post">
-  <div class="manual manual-title">
-  <strong>Create Pages</strong>
-  </div>
-<p>  <div class="manual-content">
-
-```
-  - Create a .md file in the root directory.<br>
-  - Name the file with the desired page link name.<br>  <code>about.md</code><br><code>design.md</code><br>
-  - Write the <a href="jekyll">Front Matter</a> and content in the file.
-  <div class="example">
-    <span class='manual'>FORMAT</span><BR>
-    <pre>---
-```
-
-layout: page
-title: String <span class="hint">Title of the webpage</span>
-permalink: / String / <span class="hint">Permalink for the webpage</span>
-tagline: String <span class="hint">Optional Gravity Feature : Tagline for the page</span>
-\---</pre>
-
-```
-  </div>
-  <div class="example">
-
-    <pre>---
-```
-
-layout: page
-title:  "Science"
-permalink:   /science/
-tagline : "Humanity is overrated."
-\---</pre>
-
-```
-  </div>
-```
-
-  </div>
-</p>
-</div>
-<br>
-<div class="manual-post">
-  <div class="manual manual-title">
-  <strong>Create Archives/ Category Pages</strong><br>
-</div><br>
-<div class="archiveIntro">
-  <p>
-    Introducing <strong>Archive Pages</strong>.<br></p>
-  <span class="archive-intro">  You can display a list of all the post corresponding to a particular category on a standalone Page using the <code>'archive'</code> layout.
-</span>
-</div>
-<br>
-
-<p>  <div class="manual-content">
-
-```
-  - Create a .md file in the root directory.<br>
-  - Name the file. Preferred name will be the name of the category<br>  <code>life.md</code><br>
-  - Write the <a href="jekyll">Front Matter</a> and content in the file.
-  <div class="example">
-    <span class='manual'>FORMAT</span><BR>
-<pre>---
-```
-
-layout: archive<span class="hint"> Archive Page Layout</span>
-title: String <span class="hint">Title of the webpage</span>
-permalink: / String / <span class="hint">Permalink for the webpage</span>
-tagline: String <span class="hint"> Tagline for the page</span>
-category : String <span class="hint"> Name of the category of which the page will show posts.</span>
-\---</pre>
-
-```
-  </div>
-  <div class="example">
-
-    <pre>---
-```
-
-layout: archive
-title:  "Design"
-permalink : "Design"
-category: "design"
-tagline: "It's all about perception."
-\---</pre>
-
-```
-</div><br>
-```
-
-  </div>
-</p>
-</div>
-
+  现在的我：<br> 
+  -C#桌面软件工程师<br> 
+  -UI设计向往者<br> 
+  -音乐发烧友<br> 
+  <br>
+  
+  生于西北小城<br> 
+  嬉戏于天空与白雪之间数十载<br> 
+  就读武汉大学<br> 
+  游赏于樱花和园艺之中又四年<br> 
+  <br> 
+  
+  漂泊武汉<br> 
+  为维系生计而奔波<br> 
+  却也在寻找实现自我的的方向<br> 
+  <br> 
+  
+  时常在想为人的准则<br> 
+  以及人生的方向<br> 
+  之后擦擦粘了些汤的下巴<br> 
+  乖乖的去洗吃完的泡面的碗<br> 
+  <br>
+  在这里<br> 
+  我会留下一些关于生活<br> 
+  关于我的学习和成长的记录<br> 
+  过的时间已经过去<br> 
+  留下的回忆屈指可数<br> 
+  所以<br> 
+  我想抓住更多<br> 
+  我的生活<br> 
+  更多<br>
+  更多<br> 
+  <br>
+    
+  世界那么大<br> 
+  认识的人那么少<br> 
+  既然你已经看到了这里<br> 
+  我很高兴我的世界又拓宽了一点<br> 
+  希望我们能够成为朋友<br> 
+  <br> 
+  
+  所以<br>
+  无论是生活还是技术<br>
+  有任何问题都可以联系我<br>
+  我会尽快回复<br>
+  鉴于本人才学疏浅<br>
+  有任何错误和不足<br>
+  也欢迎指证<br>
+  我会一定虚心领教<br>
+  <br>
+  最后<br>
+  您可以通过<a href="http://github.com/PrincessGod">GitHub<i class="fa fa-github"></i></a>或<a href="mailto:hongjiangji@foxmail.com">邮箱<i class="fa fa-envelope"></i></a><br>
+  与我取得联系<br>
+  愿您<br>
+  心之所至 必有所得<br>
+  <br>
+  
