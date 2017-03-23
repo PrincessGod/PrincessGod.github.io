@@ -570,37 +570,37 @@ pre {
   margin-bottom: $spacing-unit;
 }
 .post-title {
-  font-size: 62px;
+  font-size: 54px;
 
   text-align: center;
   font-family: "PT Sans";
   font-weight: 900;
   @include media-query($on-laptop) {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 .post-content {
   margin-bottom: $spacing-unit;
   padding-bottom: 3em !important;
   p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   h2 {
-    font-size: 32px;
+    font-size: 28px;
     @include media-query($on-laptop) {
-      font-size: 28px;
+      font-size: 24px;
     }
   }
   h3 {
-    font-size: 26px;
+    font-size: 22px;
     @include media-query($on-laptop) {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
   h4 {
-    font-size: 20px;
+    font-size: 16px;
     @include media-query($on-laptop) {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 }
