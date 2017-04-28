@@ -2,11 +2,11 @@
 layout: post
 title:  "MVVM-Prism"
 date:   2017-04-28 15:45:31 +0530
-categories: ["life"]
+categories: ["wpf"]
 ---
 在工作过程中，或多或少会接触到一些设计模式，鉴于最近都在做WPF相关的项目，所以接触到了在工作过程中在使用**MVVM**和**实现了MVVM的开源框架---Prism**。
 
-#### 为什么要用Prism
+### 为什么要用Prism
 在桌面软件开发过程中，往往因人员协调，需求变更，代码管理和扩展等问题导致程序很难维护，尤其是在富应用的客户端中，功能变更迅速。这时候开发 **组合式应用（Composite Application）** 的方式受到广泛认可，该方式希望以**模块（Modules）**的方式管理应用逻辑，模块之间低耦合度，模块的整合和扩展也非常容易。将各个功能逻辑封装在不同的模块中，能够对单个模块进行测试、维护、更新，并且在新功能提出后能够单独增加新的模块从而不会影响之前的功能。而这些在Prism中实现了，可以使用Prism非常容易的实现模块化开发应用。Prim针对模块化应用主要实现了以下功能：
  - 管理各个模块添加和移除，以及每个模块的生命周期
  - 用低耦合的方式实现模块和主程序的通讯
@@ -14,16 +14,22 @@ categories: ["life"]
  - 扩展MVVM使UI和模块之间的耦合度更低且更容易管理
  - 增强MVVM中的通讯机制，添加更多通讯模式
 
-#### Prism整体框架
+### Prism整体框架
+
 ![Sample composite application architecture with common patterns](https://github.com/PrincessGod/PrincessGod.github.io/blob/master/images/prism/Ch12PatternsFig1.png?raw=true)
+
+
 从程序的组成来看，一个应用程序需要至少一个主线程，承载主窗口（也就是Prism中的Shell），所有的UI元素都将呈现在主窗口Shell中，而一个个业务逻辑的实现将放在一个个模块也就是Modules中，其中有Unity或MEF（.NET4.5以上）管理插件的添加，依赖项注册，管理插件服务，插件版本控制等，最后 Prism Library Service 对UI控件的注册，模块间共享接口，模块间事件管理，程序和模块间的命令进行统一管理。最后两个并行的全局管理将模块和主程序之间整合在一起，从而实现模块和程序之间的低耦合以及稳定的联系。
 
-#### View和Shell
+### View和Shell
+
 ![Composition example](https://github.com/PrincessGod/PrincessGod.github.io/blob/master/images/prism/Ch12PatternsFig2.png?raw=true)
+
+
 既然Shell承载应用的所有UI元素，那么View是否应该放在Shell里？
 实际上Prism对View进行了封装，通常情况下使用合理的Region填充Shell，Region再对View进行管理。这样做的好处就是当界面上某一部分用来做一些展示，另一部分用来接收用户的交互信息时，展示部分会随用户的交互相应变化甚至切换View,这时把展示部分封装在Region中，再把需要展示的Views注册到Region中，Prism提供了Region切换View的多种方式以及消息相应处理，逻辑就会变得很清晰，我们只需要在合适的时间切换合适的Region中的View,不用担心消息传递等问题。
 
-#### 其他
+### 其他
 Prism在具体实现过程中提供了很多便利的功能，大致有：
  - BootStrapper对应用的启动进行全方面管理，可根据需要制定
  - 模块加载管理，从注册到初始化到销毁
@@ -34,7 +40,7 @@ Prism在具体实现过程中提供了很多便利的功能，大致有：
  - 全局Log
  - ClickOne扩展应用
  
-#### 相关链接
+### 相关链接
 * [Prism](https://github.com/PrismLibrary/Prism)  主页
 * [Prism Doc](https://github.com/PrismLibrary/Prism/tree/master/docs)  官方文档
 * [Prism WPF Sample](https://github.com/PrismLibrary/Prism-Samples-Wpf)  WPF 示例
