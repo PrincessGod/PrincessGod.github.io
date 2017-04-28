@@ -15,11 +15,11 @@ categories: ["life"]
  - 增强MVVM中的通讯机制，添加更多通讯模式
 
 #### Prism整体框架
-![Sample composite application architecture with common patterns](https://github.com/PrismLibrary/Prism/blob/master/docs/WPF/images/Ch12PatternsFig1.png)
+![Sample composite application architecture with common patterns](https://github.com/PrincessGod/PrincessGod.github.io/blob/master/images/prism/Ch12PatternsFig1.png?raw=true)
 从程序的组成来看，一个应用程序需要至少一个主线程，承载主窗口（也就是Prism中的Shell），所有的UI元素都将呈现在主窗口Shell中，而一个个业务逻辑的实现将放在一个个模块也就是Modules中，其中有Unity或MEF（.NET4.5以上）管理插件的添加，依赖项注册，管理插件服务，插件版本控制等，最后 Prism Library Service 对UI控件的注册，模块间共享接口，模块间事件管理，程序和模块间的命令进行统一管理。最后两个并行的全局管理将模块和主程序之间整合在一起，从而实现模块和程序之间的低耦合以及稳定的联系。
 
 #### View和Shell
-![Composition example](images/Ch12PatternsFig2.png)
+![Composition example](https://github.com/PrincessGod/PrincessGod.github.io/blob/master/images/prism/Ch12PatternsFig2.png?raw=true)
 既然Shell承载应用的所有UI元素，那么View是否应该放在Shell里？
 实际上Prism对View进行了封装，通常情况下使用合理的Region填充Shell，Region再对View进行管理。这样做的好处就是当界面上某一部分用来做一些展示，另一部分用来接收用户的交互信息时，展示部分会随用户的交互相应变化甚至切换View,这时把展示部分封装在Region中，再把需要展示的Views注册到Region中，Prism提供了Region切换View的多种方式以及消息相应处理，逻辑就会变得很清晰，我们只需要在合适的时间切换合适的Region中的View,不用担心消息传递等问题。
 
